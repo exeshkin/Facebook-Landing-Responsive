@@ -206,7 +206,7 @@ h6 {
 .content p {
   font-size: 1.1em;
   color: #333;
-  font-size: 1.8em;
+  line-height: 1.8em;
 }
 
 .content h4 {
@@ -315,4 +315,64 @@ h6 {
 
 .social-icon a:hover {
   color: #2d88ff;
+}
+
+@media (max-width: 1100px) {
+  .main {
+    padding: 30px;
+    background: #fff;
+  }
+  .header {
+    padding: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .app-download {
+    display: none;
+  }
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 100px 0;
+  }
+  .content .text {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .content h2 {
+    font-size: 3em;
+  }
+  .image-box .slides {
+    margin: 0;
+  }
+  .dots {
+    position: relative;
+    top: initial;
+    -webkit-transform: none;
+            transform: none;
+    right: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 20px;
+  }
+  .dots .dot {
+    width: 25px;
+    height: 10px;
+    background: #3b5998;
+    opacity: 0.2;
+  }
+  .dots .dot.active {
+    background: #3b5998;
+    opacity: 1;
+  }
+  .social-icon {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }

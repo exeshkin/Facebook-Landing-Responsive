@@ -93,7 +93,7 @@
 	p {
 		font-size: 1.1em;
 		color: #333;
-		font-size: 1.8em;
+		line-height: 1.8em;
 	}
 
 	h4 {
@@ -183,5 +183,67 @@
 		&:hover {
 			color: #2d88ff;
 		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.main {
+		padding: 30px;
+		background: #fff;
+	}
+
+	.header {
+		padding: 30px;
+		justify-content: space-between;
+
+		.app-download {
+			display: none;
+		}
+	}
+
+	.content {
+		flex-direction: column-reverse;
+		margin: 100px 0;
+
+		.text {
+			margin-top: 30px;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 3em;
+		}
+	}
+
+	.image-box {
+		.slides {
+			margin: 0;
+		}
+	}
+
+	.dots {
+		position: relative;
+		top: initial;
+		transform: none;
+		right: initial;
+		flex-direction: row;
+		margin-top: 20px;
+
+		.dot {
+			width: 25px;
+			height: 10px;
+			background: #3b5998;
+			opacity: 0.2;
+
+			&.active {
+				background: #3b5998;
+				opacity: 1;
+			}
+		}
+	}
+
+	.social-icon {
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
