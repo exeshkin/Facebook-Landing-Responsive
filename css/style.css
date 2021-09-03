@@ -297,6 +297,13 @@ h6 {
 
 .social-icon li {
   margin-right: 20px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.social-icon li:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .social-icon a {
