@@ -94,6 +94,146 @@ h6 {
 
 .main {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, #fff), color-stop(60%, #3b5998), to(#3b5998));
-  background: linear-gradient(#fff, #fff 60%, #3b5998 60%, #3b5998 100%);
+  background: linear-gradient(120deg, #fff, #fff 62%, #3b5998 62%, #3b5998 100%);
+  min-height: 100vh;
+  padding: 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo img {
+  max-width: 50px;
+  margin-right: 20px;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .nav-item {
+  margin: 0 10px;
+}
+
+.header .nav-link {
+  color: #333;
+  font-weight: 500;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.header .nav-link.active, .header .nav-link:hover {
+  color: #2d88ff;
+}
+
+.header .app-download {
+  position: absolute;
+  right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  color: #3b5998;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.header .app-download:hover {
+  background: #2d88ff;
+  color: #fff;
+}
+
+.header .app-download ion-icon {
+  margin-right: 10px;
+  font-size: 1.4em;
+}
+
+.content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .text {
+  max-width: 800px;
+}
+
+.content h2 {
+  font-size: 6em;
+  color: #3b5998;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 1.1em;
+  color: #333;
+  font-size: 1.8em;
+}
+
+.content h4 {
+  margin: 20px 0 20px 0;
+  font-weight: 700;
+  color: #333;
+}
+
+.content .btn {
+  background: #3b5998;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  margin: 5px 20px 5px 0;
+  border-radius: 5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.content .btn:hover {
+  background: #2d88ff;
+}
+
+.content ion-icon {
+  margin-right: 10px;
+  font-size: 1.4em;
 }
