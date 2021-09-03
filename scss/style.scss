@@ -78,24 +78,25 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 
 	.text {
 		max-width: 800px;
 	}
 
-	h2{
+	h2 {
 		font-size: 6em;
 		color: #3b5998;
 		font-weight: 700;
 	}
 
-	p{
+	p {
 		font-size: 1.1em;
 		color: #333;
 		font-size: 1.8em;
 	}
 
-	h4{
+	h4 {
 		margin: 20px 0 20px 0;
 		font-weight: 700;
 		color: #333;
@@ -112,13 +113,71 @@
 		border-radius: 5px;
 		transition: 0.25s;
 
-		&:hover{
+		&:hover {
 			background: #2d88ff;
 		}
 	}
 
-	ion-icon{
+	ion-icon {
 		margin-right: 10px;
 		font-size: 1.4em;
+	}
+}
+
+.image-box {
+	.slides {
+		margin-left: 50px;
+		margin-right: 100px;
+		max-width: 300px;
+		display: none;
+		transition: 0.25s;
+
+		&.active {
+			display: block;
+		}
+	}
+}
+
+.dots {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 80px;
+	display: flex;
+	flex-direction: column;
+
+	.dot {
+		position: relative;
+		width: 10px;
+		height: 30px;
+		background: rgba(225, 225, 225, 0.25);
+		display: inline-flex;
+		margin: 5px;
+		cursor: pointer;
+		transition: 0.25s;
+
+		&.active {
+			background: #fff;
+		}
+	}
+}
+
+.social-icon {
+	position: absolute;
+	bottom: 30px;
+	display: flex;
+
+	li {
+		margin-right: 20px;
+	}
+
+	a {
+		font-size: 1.8em;
+		color: #3b5998;
+		transition: 0.25s;
+
+		&:hover {
+			color: #2d88ff;
+		}
 	}
 }

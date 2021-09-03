@@ -188,6 +188,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .content .text {
@@ -236,4 +239,73 @@ h6 {
 .content ion-icon {
   margin-right: 10px;
   font-size: 1.4em;
+}
+
+.image-box .slides {
+  margin-left: 50px;
+  margin-right: 100px;
+  max-width: 300px;
+  display: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.image-box .slides.active {
+  display: block;
+}
+
+.dots {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dots .dot {
+  position: relative;
+  width: 10px;
+  height: 30px;
+  background: rgba(225, 225, 225, 0.25);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.dots .dot.active {
+  background: #fff;
+}
+
+.social-icon {
+  position: absolute;
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-icon li {
+  margin-right: 20px;
+}
+
+.social-icon a {
+  font-size: 1.8em;
+  color: #3b5998;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.social-icon a:hover {
+  color: #2d88ff;
 }
